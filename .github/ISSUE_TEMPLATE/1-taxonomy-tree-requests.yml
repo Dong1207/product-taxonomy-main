@@ -1,0 +1,89 @@
+name: Taxonomy Tree Requests
+description: File a request to change the Taxonomy Tree
+title: "[Taxonomy Tree]: "
+assignees: ricardotejedorsanz,ornanatan
+labels:
+  - "taxonomy-tree-requests"
+body:
+  - type: dropdown
+    id: taxonomy_field
+    attributes:
+      label: Taxonomy Field
+      multiple: true
+      options:
+        - Categories
+        - Attributes
+        - Values
+        - Other
+  - type: dropdown
+    id: vertical
+    attributes:
+      label: Vertical
+      multiple: true
+      options:
+        - Animals & Pet Supplies
+        - Apparel & Accessories
+        - Arts & Entertainment
+        - Baby & Toddler
+        - Business & Industrial
+        - Cameras & Optics
+        - Electronics
+        - Food, Beverages & Tobacco
+        - Furniture
+        - Hardware
+        - Health & Beauty
+        - Home & Garden
+        - Luggage & Bags
+        - Mature
+        - Media
+        - Office Supplies
+        - Religious & Ceremonial
+        - Services
+        - Software
+        - Sporting Goods
+        - Toys & Games
+        - Vehicles & Parts
+        - Product Add-ons
+  - type: dropdown
+    id: change_type
+    attributes:
+      label: Change Type
+      multiple: false
+      options:
+        - New category or attribute
+        - Rename category or attribute
+        - Assign attribute to more categories
+        - Remove attribute from category
+        - New attribute value
+        - Rename attribute value
+        - Assign value to more attributes
+        - Remove attribute value
+        - Other
+  - type: textarea
+    id: issue
+    attributes:
+      label: Issue
+      description: "Provide a brief summary of your issue. For example: 'Missing category for Sombrero Hats.'"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: "Tell us more about your experience and how these changes will improve our taxonomy. For example: 'I didn't find a suitable category or fitting attributes for my product, even though we have one for Baseball Caps.'"
+    validations:
+      required: true
+  - type: textarea
+    id: video_screenshot
+    attributes:
+      label: Video/Screenshot
+      description: Attach any relevant videos or screenshots to this text area.
+    validations:
+      required: false
+  - type: input
+    id: merchant_store
+    attributes:
+      label: Store Public URL
+      description: Please share a link to your store or any other relevant link to help us review and support your request. **This is a public repo do not include any sensitive info.**
+    validations:
+      required: false
