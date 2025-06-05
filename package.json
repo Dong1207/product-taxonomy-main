@@ -1,5 +1,24 @@
 {
+  "name": "simple-product-classifier",
+  "version": "1.0.0",
+  "description": "Simple AI product classifier using OpenAI",
+  "main": "productClassifier.js",
+  "type": "module",
+  "scripts": {
+    "start": "node productClassifier.js",
+    "test": "node test.js"
+  },
   "dependencies": {
-    "js-yaml": "^4.1.0"
-  }
+    "openai": "^4.20.1",
+    "js-yaml": "^4.1.0",
+    "dotenv": "^16.3.1"
+  },
+  "keywords": [
+    "product",
+    "classification",
+    "ai",
+    "openai"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
 }
